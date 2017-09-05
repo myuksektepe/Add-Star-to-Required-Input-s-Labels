@@ -8,6 +8,7 @@ Bu basit fonksiyon bir HTML formunda zorunlu olarak belirlediğiniz veri giriş 
 <br>
 
 <b>HTML</b>
+```html
 <form id="affilates_request_form" action="">
 	<div class="row">
 		<div class="col-md-6">
@@ -129,17 +130,17 @@ Bu basit fonksiyon bir HTML formunda zorunlu olarak belirlediğiniz veri giriş 
 		</div>
 	</div>
 </form>
-
+```
 
 <b>JQUERY</b>
-<pre>
+```javascript
 	<script>
 		// Zorunlu niteliğine sahip bütün alanları bul / Find all input has required attribute
 		$(':input[required]').each(function() { 
 
 			// Etiketi bul ve sonuna (*) ekle / Find label and add (*) end of text
 			$("label[for='"+$(this).attr('id')+"']").append(" (*)"); 
-			
+
 		});
 	</script>
-</pre>
+```
