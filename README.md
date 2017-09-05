@@ -7,6 +7,8 @@ Bu basit fonksiyon bir HTML formunda zorunlu olarak belirlediğiniz veri giriş 
 <br>
 <br>
 
+<b>HTML</b>
+<pre>
 	<div class="container">
 		<h1>Add Star to Required Input's Labels</h1>
 		<p></p>
@@ -133,9 +135,15 @@ Bu basit fonksiyon bir HTML formunda zorunlu olarak belirlediğiniz veri giriş 
 			</div>
 		</form>
 	</div>
+</pre>
 
+<b>JQUERY</b>
+<pre>
 	<script>
-		$(':input[required]').each(function() { // Zorunlu niteliğine sahip bütün alanları bul / Find all input has required attribute
-			$("label[for='"+$(this).attr('id')+"']").append(" (*)"); // Etiketi bul ve sonuna (*) ekle / Find label and add (*) end of text
+		$(':input[required]').each(function() { 
+		// Zorunlu niteliğine sahip bütün alanları bul / Find all input has required attribute
+			$("label[for='"+$(this).attr('id')+"']").append(" (*)"); 
+			// Etiketi bul ve sonuna (*) ekle / Find label and add (*) end of text
 		});
 	</script>
+</pre>
