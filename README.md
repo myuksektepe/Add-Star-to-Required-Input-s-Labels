@@ -134,13 +134,11 @@ Bu basit fonksiyon bir HTML formunda zorunlu olarak belirlediğiniz veri giriş 
 
 <b>JQUERY</b>
 ```javascript
-	<script>
-		// Zorunlu niteliğine sahip bütün alanları bul / Find all input has required attribute
-		$(':input[required]').each(function() { 
+// Zorunlu niteliğine sahip bütün alanları bul / Find all input has required attribute
+$(':input[required]').each(function() { 
 
-			// Etiketi bul ve sonuna (*) ekle / Find label and add (*) end of text
-			$("label[for='"+$(this).attr('id')+"']").append(" (*)"); 
+	// Etiketi bul ve sonuna (*) ekle / Find label and add (*) end of text
+	$("label[for='"+$(this).attr('id')+"']").append(" (*)"); 
 
-		});
-	</script>
+});
 ```
